@@ -1,9 +1,10 @@
-name: CI
+name: Angel Fast Api Demo
 
 on:
   push:
     branches:
       - master
+      - develop
 
 jobs:
   ci:
