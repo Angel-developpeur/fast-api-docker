@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11' # <-- Cambia de 3.12 a 3.11
       
       - name: Install dependencies
         run: |
