@@ -38,4 +38,4 @@ jobs:
 
       - name: docker push
         run: |
-          docker push a${{ secrets.DOCKER_USERNAME }}/python-fastapi-demo:${{ github.sha }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/python-fastapi-demo:${{ github.sha }}
